@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        string apiKey = "AIzaSyAWUKRP4SG0AWIEk3nVLlMdW0Y3zmg0kFs";
+        string apiKey = "";
         Console.WriteLine("Please give an arguement to search");
         string Args = Console.ReadLine();
         SearchResource.ListRequest searchRequest = new SearchResource.ListRequest(new YouTubeService(new BaseClientService.Initializer { ApiKey = apiKey }), "snippet");
