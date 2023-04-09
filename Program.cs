@@ -17,7 +17,7 @@ class Program
         string videoId = searchResponse.Items[0].Id.VideoId;
         string videoURL = "https://www.youtube.com/watch?v=" + videoId;
         ProcessStartInfo YTDlp = new ProcessStartInfo();
-        YTDlp.FileName = "yt-dpl.exe";
+        YTDlp.FileName = "yt-dlp.exe";
         YTDlp.Arguments = $"-f best --get-url {videoURL} --no-warning";
         YTDlp.UseShellExecute = false;
         YTDlp.RedirectStandardOutput = true;
@@ -35,6 +35,6 @@ class Program
             Process ff_process = Process.Start(FFplay);
         }
     }
-    
+
 }
 
