@@ -2,8 +2,7 @@
 using Google.Apis.YouTube.v3;
 using Google.Apis.YouTube.v3.Data;
 using System.Diagnostics;
-using System.IO;
-using System.Threading;
+
 class Program
 {
     static void Main(string[] args)
