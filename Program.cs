@@ -93,7 +93,6 @@ class Program
                             Console.Clear();
                             string v = "\\";
                             var modified = streamURL.Insert(5, v);
-                            Console.WriteLine(modified);
                             ProcessStartInfo FFBars = new ProcessStartInfo();
                             FFBars.FileName = "ffplay";
                             FFBars.Arguments = $"-hide_banner -sync audio -autoexit  -volume 80 -hide_banner  -f lavfi \"amovie=filename='{modified}',asplit=[out0][out1];[out0]showvolume=r=25:w=1920:h=40:f=0.5:ds=lin:v=0\"";
@@ -106,7 +105,6 @@ class Program
                             Console.Clear();
                             string v = "\\";
                             var modified = streamURL.Insert(5, v);
-                            Console.WriteLine(modified);
                             ProcessStartInfo FFBars = new ProcessStartInfo();
                             FFBars.FileName = "ffplay";
                             FFBars.Arguments = $"-hide_banner -sync audio -autoexit  -volume 80 -hide_banner  -f lavfi \"amovie=filename='{modified}',asplit=[out0][out1];[out0]showwaves=mode=point:s=hd480:colors=White:r=25\"";
@@ -119,7 +117,6 @@ class Program
                             Console.Clear();
                             string v = "\\";
                             var modified = streamURL.Insert(5, v);
-                            Console.WriteLine(modified);
                             ProcessStartInfo FFBars = new ProcessStartInfo();
                             FFBars.FileName = "ffplay";
                             FFBars.Arguments = $"-hide_banner -sync audio -autoexit  -volume 80 -hide_banner  -f lavfi \"amovie=filename='{modified}',asplit=[out0][out1];[out0]showwaves=mode=line:s=hd480:colors=White:r=25\"";
@@ -132,7 +129,6 @@ class Program
                             Console.Clear();
                             string v = "\\";
                             var modified = streamURL.Insert(5, v);
-                            Console.WriteLine(modified);
                             ProcessStartInfo FFBars = new ProcessStartInfo();
                             FFBars.FileName = "ffplay";
                             FFBars.Arguments = $"-hide_banner -sync audio -autoexit  -volume 80 -hide_banner  -f lavfi \"amovie=filename='{modified}',asplit=[out0][out1];[out0]showwaves=mode=p2p:s=hd480:colors=White:r=25\"";
@@ -145,7 +141,6 @@ class Program
                             Console.Clear();
                             string v = "\\";
                             var modified = streamURL.Insert(5, v);
-                            Console.WriteLine(modified);
                             ProcessStartInfo FFBars = new ProcessStartInfo();
                             FFBars.FileName = "ffplay";
                             FFBars.Arguments = $"-hide_banner -sync audio -autoexit  -volume 80 -hide_banner  -f lavfi \"amovie=filename='{modified}',asplit=[out0][out1];[out0]showwaves=mode=cline:s=hd480:colors=White:r=25\"";
